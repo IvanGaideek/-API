@@ -1,0 +1,36 @@
+h4 {
+    color: #949493;
+    padding-left: 20px;
+}
+
+h2, h5 {
+    text-align: center;
+}
+
+table {
+   margin-right: 2%;
+   width: 80%;
+}
+
+th {
+   text-align: center;
+   background-color: grey;
+}
+
+td {
+   background-color: #a5caf8;
+   text-align: center;
+}
+
+.color1 {
+    background-color: #00FF00;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.image-container img {
+  max-width: 100%; /* Чтобы изображение не выходило за границы */
+}

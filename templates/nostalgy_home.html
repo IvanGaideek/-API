@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block submits %}
+    {% if current_user.is_authenticated %}
+        <a class="navbar-brand" href="/logout">{{ current_user.name }}</a>
+    {% else %}
+        <p>
+            <a class="btn btn-primary " href="/register">Register</a>
+            <a class="btn btn-success" href="/login">Log in</a>
+        </p>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <h2>Nostalgy</h2>
+    <h2>{{ name }}</h2>
+    <h5>Hometown {{ town }}</h5>
+    <div class="image-container">
+        <img src="{{ url_for('get_image', coord=coordinate) }}" alt="Родина">
+    </div>
+{% endblock %}
